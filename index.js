@@ -31,7 +31,7 @@ app.listen(PORT, (error) => {
 
 // API without using routes
 app.post("/addUsers", addUser);
-app.post("/testing", (req, res) => {
+app.get("/testing", (req, res) => {
   res.send("Testing Successful");
 });
 // app.post("./addUserWithoutRoutes", async (req, res) => {
