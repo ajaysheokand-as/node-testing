@@ -2,7 +2,8 @@ const express = require("express");
 const connect = require("./connection/dbConnection");
 const { addUser } = require("./controllers/userController");
 const app = express();
-const PORT = process.env.PORT || 4000;
+const dotenv = require("dotenv").config();
+const PORT = process.env.PORT || 4040;
 const obj = {
   name: "test",
   address: "localhost",
